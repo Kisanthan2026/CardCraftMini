@@ -1,0 +1,133 @@
+/* Layer 1: Page background */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #F4F1EA;
+  color: #293241;
+  font-family: 'Poppins', sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* Layer 2: Card box and padding */
+.business-card {
+  width: 100%;
+  max-width: 380px;
+  margin: auto;
+  padding: 2.5rem 2rem;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E0D7;
+  border-radius: 24px;
+  box-shadow: 0 16px 40px rgba(41, 50, 65, 0.08);
+  text-align: center;
+}
+
+/* Layer 3: Profile photo and text */
+.profile-photo {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  object-fit: cover;
+  border: 4px solid #F4F1EA;
+  border-radius: 50%;
+}
+
+.eyebrow {
+  margin: 0 0 0.4rem;
+  color: #3D5A80;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.6rem, 7vw, 2rem);
+  font-weight: 700;
+}
+
+.job-title {
+  margin: 0 0 1.25rem;
+  color: #3D5A80;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.bio {
+  margin: 0 0 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.9;
+}
+
+/* Layer 4: Contact button */
+.contact-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.9rem 1.25rem;
+  margin: 0 0 1.75rem;
+  background-color: #3D5A80;
+  color: #FFFFFF;
+  border: 2px solid #3D5A80;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 180ms ease,
+              color 180ms ease,
+              transform 180ms ease;
+}
+
+/* Required pseudo-class */
+.contact-button:hover {
+  background-color: #FFFFFF;
+  color: #3D5A80;
+  transform: translateY(-2px);
+}
+
+/* Layer 5: Social links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #E5E0D7;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  min-height: 32px;
+  color: #3D5A80;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.social-links a:hover {
+  opacity: 0.65;
+  transform: translateY(-2px);
+}
+
+.contact-button:focus-visible,
+.social-links a:focus-visible {
+  outline: 3px solid #3D5A80;
+  outline-offset: 4px;
+}
